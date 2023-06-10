@@ -2,13 +2,15 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "todo-list-aws"
-s3_prefix = "todo-list-aws"
+stack_name = "todo-list-aws-Stack"
+s3_prefix = "todo-list-aws-Stack"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
 parameter_overrides = "Stage=\"default\""
 image_repositories = []
 confirm_changeset = true
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-c5ep64ophu30"
+disable_rollback = true
 
 [staging]
 [staging.deploy]
