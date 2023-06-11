@@ -2,8 +2,8 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "todo-list-aws-Stack"
-s3_prefix = "todo-list-aws-Stack"
+stack_name = "todo-list-aws-local"
+s3_prefix = "todo-list-aws-local"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
 parameter_overrides = "Stage=\"default\""
